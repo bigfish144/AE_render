@@ -1,0 +1,50 @@
+{
+    "template": {
+        "src": "file:///C:/Users/admin/Downloads/test.aep",
+        "composition": "main"
+    },
+    "actions":{
+        "postrender": [
+            {
+                "module": "@nexrender/action-encode",
+                "preset": "mp4",
+                "output": "encoded.mp4"
+            },
+            {
+                "module": "@nexrender/action-copy",
+                "input": "encoded.mp4",
+                "output": "C:/wudanni/output/myresult.mp4"
+            }
+        ]
+    },
+    "assets": [
+        {
+          "type": "data",
+          "layerName": "solid",
+          "property": "Effects.CC Twister.Completion",
+          "value": 0
+        },
+        {
+          "type": "data",
+          "layerName": "solid",
+          "property": "Effects.CC Twister.Shading",
+          "value": 0.99418671324248
+        },
+        {
+          "type": "data",
+          "layerName": "solid",
+          "property": "Effects.CC Twister.Center",
+          "value": [
+            940.007224155499,
+            568.613881355386
+          ]
+        },
+        {
+          "type": "data",
+          "layerName": "solid",
+          "property": "Effects.CC Twister.Axis",
+          "value": -298.065622738809
+        }
+      ]
+
+}
