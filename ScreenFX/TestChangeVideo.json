@@ -1,0 +1,27 @@
+{
+    "template": {
+        "src": "file:///D:/1Data/2zsz/Vitae/TuSimple/NexRender/Test.aep",
+        "composition": "main",
+        "outputModule": "H.264 - 匹配渲染设置 - 15 Mbps",
+        "outputExt": "mp4",
+        "settingsTemplate": "最佳设置"
+    },
+    "assets":[
+        {
+            "src": "file:///D:/1Data/2zsz/Vitae/TuSimple/NexRender/output/0678.mov",
+            "type": "video",
+            "layerName": "Video"
+        }
+    ],
+    "actions":{
+        "postdownload": [
+
+        ],
+        "postrender":[
+            {
+                "module": "@nexrender/action-copy",
+                "output": "D:/1Data/2zsz/Vitae/TuSimple/NexRender/myresult.mp4"
+            }
+        ]
+    }
+}
